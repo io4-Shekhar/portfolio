@@ -1,10 +1,16 @@
-import logo from "./logo.svg";
-import "./App.css";
+import "./Styles/main.css";
+import AboutMe from "./component/AboutMe";
+import Contact from "./component/Contact";
+import MainPage from "./component/MainPage";
+import Projects from "./component/MiniProjects";
 
 function App() {
   return (
-    <div className="App">
-      <h3>shekhar</h3>
+    <div className="app-container">
+      <MainPage />
+      <AboutMe />
+      <Projects />
+      <Contact />
     </div>
   );
 }
