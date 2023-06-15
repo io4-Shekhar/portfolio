@@ -13,6 +13,7 @@ import threeIco from "../Assets/img/three.png";
 import avatar from "../Assets/img/avatar.png";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { Box, Typography, Link } from "@mui/material";
 
 export default function MainPage() {
   const [html, setHtml] = useState("");
@@ -46,23 +47,26 @@ export default function MainPage() {
     setThree();
   };
   return (
-    <div className="section-main" id="home">
+    <Box component="div" className="section-main" id="home">
       <Navbar />
-      <div className="main-page-container">
-        <div className="left-container">
-          <span className="title">Front-End React Developer</span>
+      <Box component="div" className="main-page-container">
+        <Box component="div" className="left-container">
+          <Box component="span" className="title" variant="body2">
+            Front-End React Developer
+          </Box>
           <img src={hiIco} className="hello-ico" alt="hello icon" />
-          <div className="description">
+          <Box component="div" className="description">
             Hi, I'm Przemysław Przebięda. A passionate Front-end React Developer
             based in Cracow, Poland.
-            <a href="#contact">
+            <Link href="#" variant="body2">
+              {" "}
               <img
                 src={localizationIco}
                 className="localization-ico"
                 alt="localization icon"
               />
-            </a>
-          </div>
+            </Link>
+          </Box>
           <a
             href="https://www.linkedin.com/in/przemys%C5%82aw-przebi%C4%99da/"
             target="_blank"
@@ -72,27 +76,31 @@ export default function MainPage() {
           <a href="https://github.com/PPrzebieda" target="_blank">
             <img src={gitIco} className="social-ico" alt="github icon" />
           </a>
-          <div className="description">Tech Stack:</div>
-          <div className="tech-stack-box">
-            <div
+          <Box component="div" className="description">
+            Tech Stack:
+          </Box>
+          <Box component="div" className="tech-stack-box">
+            <Box
               className="tech-stack-single-box"
               id="HTML"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
               <img src={htmlIco} className="tech-ico1" alt="html icon" />
-              <span>{html ? "HTML" : ""}</span>
-            </div>
-            <div
+              <Typography>{html ? "HTML" : ""}</Typography>
+            </Box>
+            <Box
+              component="div"
               className="tech-stack-single-box"
               id="CSS"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
               <img src={cssIco} className="tech-ico1" alt="css icon" />
-              <span>{css ? "CSS/SCSS" : ""}</span>
-            </div>
-            <div
+              <Box component="span">{css ? "CSS/SCSS" : ""}</Box>
+            </Box>
+            <Box
+              component="div"
               className="tech-stack-single-box"
               id="JavaScript"
               onMouseEnter={handleMouseEnter}
@@ -100,8 +108,9 @@ export default function MainPage() {
             >
               <img src={jsIco} className="tech-ico1" alt="js icon" />
               <span>{js ? "JavaScript" : ""}</span>
-            </div>
-            <div
+            </Box>
+            <Box
+              component="div"
               className="tech-stack-single-box"
               id="Bootstrap"
               onMouseEnter={handleMouseEnter}
@@ -109,8 +118,9 @@ export default function MainPage() {
             >
               <img src={bootIco} className="tech-ico2" alt="bootstrap icon" />
               <span>{boot ? "Bootstrap" : ""}</span>
-            </div>
-            <div
+            </Box>
+            <Box
+              component="div"
               className="tech-stack-single-box"
               id="React"
               onMouseEnter={handleMouseEnter}
@@ -118,8 +128,9 @@ export default function MainPage() {
             >
               <img src={reactIco} className="tech-ico2" alt="react icon" />
               <span>{react ? "React.js" : ""}</span>
-            </div>
-            <div
+            </Box>
+            <Box
+              component="div"
               className="tech-stack-single-box"
               id="Three.js"
               onMouseEnter={handleMouseEnter}
@@ -127,10 +138,10 @@ export default function MainPage() {
             >
               <img src={threeIco} className="tech-ico3" alt="three.js icon" />
               <span>{three ? "Three.js" : ""}</span>
-            </div>
-          </div>
-        </div>
-        <div className="right-container">
+            </Box>
+          </Box>
+        </Box>
+        <Box component="div" className="right-container">
           <Canvas>
             <OrbitControls enableZoom={false} />
             <ambientLight intensity={1} />
@@ -145,8 +156,8 @@ export default function MainPage() {
             </Sphere>
           </Canvas>
           <img src={avatar} className="avatar" alt="avatar" />
-        </div>
-      </div>
-    </div>
+        </Box>
+      </Box>
+    </Box>
   );
 }
