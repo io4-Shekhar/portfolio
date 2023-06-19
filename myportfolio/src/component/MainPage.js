@@ -9,7 +9,9 @@ import cssIco from "../Assets/img/css.png";
 import jsIco from "../Assets/img/js.png";
 import bootIco from "../Assets/img/bootstrap.png";
 import reactIco from "../Assets/img/react.png";
-import threeIco from "../Assets/img/three.png";
+// import threeIco from "../Assets/img/three.png";
+import MaterialUi from "../Assets/img/MaterialUi.png";
+import liveIco from "../Assets/img/live.png";
 import avatar from "../Assets/img/avatar.png";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
@@ -34,7 +36,7 @@ export default function MainPage() {
       setBoot(true);
     } else if (e.target.id == "React") {
       setReact(true);
-    } else if (e.target.id == "Three.js") {
+    } else if (e.target.id == "MaterialUI") {
       setThree(true);
     }
   };
@@ -56,8 +58,8 @@ export default function MainPage() {
           </Box>
           <img src={hiIco} className="hello-ico" alt="hello icon" />
           <Box component="div" className="description">
-            Hi, I'm Przemysław Przebięda. A passionate Front-end React Developer
-            based in Cracow, Poland.
+            Hi, I'm Chandra Shekhar. A passionate Front-end React Developer
+            based in Delhi, India.
             <Link href="#" variant="body2">
               {" "}
               <img
@@ -68,12 +70,12 @@ export default function MainPage() {
             </Link>
           </Box>
           <a
-            href="https://www.linkedin.com/in/przemys%C5%82aw-przebi%C4%99da/"
+            href="https://www.linkedin.com/in/chandra-shekhar-849969199/"
             target="_blank"
           >
             <img src={lndIco} className="social-ico" alt="linkedin icon" />
           </a>
-          <a href="https://github.com/PPrzebieda" target="_blank">
+          <a href="https://github.com/io4-Shekhar" target="_blank">
             <img src={gitIco} className="social-ico" alt="github icon" />
           </a>
           <Box component="div" className="description">
@@ -107,7 +109,7 @@ export default function MainPage() {
               onMouseLeave={handleMouseLeave}
             >
               <img src={jsIco} className="tech-ico1" alt="js icon" />
-              <span>{js ? "JavaScript" : ""}</span>
+              <Box component="span">{js ? "JavaScript" : ""}</Box>
             </Box>
             <Box
               component="div"
@@ -117,7 +119,7 @@ export default function MainPage() {
               onMouseLeave={handleMouseLeave}
             >
               <img src={bootIco} className="tech-ico2" alt="bootstrap icon" />
-              <span>{boot ? "Bootstrap" : ""}</span>
+              <Box component="span">{boot ? "Bootstrap" : ""}</Box>
             </Box>
             <Box
               component="div"
@@ -127,17 +129,17 @@ export default function MainPage() {
               onMouseLeave={handleMouseLeave}
             >
               <img src={reactIco} className="tech-ico2" alt="react icon" />
-              <span>{react ? "React.js" : ""}</span>
+              <Box component="span">{react ? "React.js" : ""}</Box>
             </Box>
             <Box
               component="div"
               className="tech-stack-single-box"
-              id="Three.js"
+              id="MaterialUI"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <img src={threeIco} className="tech-ico3" alt="three.js icon" />
-              <span>{three ? "Three.js" : ""}</span>
+              <img src={MaterialUi} className="tech-ico3" alt="three.js icon" />
+              <Box component="span">{three ? "MaterialUI" : ""}</Box>
             </Box>
           </Box>
         </Box>

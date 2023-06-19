@@ -11,20 +11,19 @@ export default function Projects() {
       <Box component="div" className="projects-container">
         <Box component="div" className="project-title">
           <h2>Projects</h2>
-          <span>
-            Below you can see my projects, check out the live demos and code on
-            GitHub
-          </span>
+          <Box component="span">
+            Below you can see my projects, check out the code on GitHub
+          </Box>
         </Box>
         <Project1 />
         <Project2 />
         <Project3 />
         <Box component="div" className="project-title mini">
           <h3>Mini projects</h3>
-          <span>
+          <Box component="span">
             This section includes projects from the beginning of my programming
             education and technologies in which I am just beginning to learn
-          </span>
+          </Box>
         </Box>
 
         <MiniProjects />

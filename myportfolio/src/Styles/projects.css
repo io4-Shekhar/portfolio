@@ -126,7 +126,7 @@
 }
 .section-projects .project-box .left-container .img-project1:hover,
 .section-projects .project-box .left-container .img-project1:focus {
-  transform: translateY(-80.5%);
+  transform: translateY(-35.5%);
   transition: transform 10s ease-in-out 0s;
 }
 @media only screen and (max-width: 1300px) {
@@ -163,7 +163,7 @@
 }
 .section-projects .project-box .left-container .img-project2:hover,
 .section-projects .project-box .left-container .img-project2:focus {
-  transform: translateY(-85.5%);
+  transform: translateY(-35%);
   transition: transform 10s ease-in-out 0s;
 }
 @media only screen and (max-width: 1300px) {

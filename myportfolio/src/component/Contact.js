@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import Map from "./Map";
 import mailIco from "../Assets/img/mailIco.png";
 import emailjs from "@emailjs/browser";
+import { Box } from "@mui/material";
 
 export default function Contact() {
   const form = useRef();
@@ -30,9 +31,9 @@ export default function Contact() {
       );
   };
   return (
-    <div className="section-contact" id="contact">
-      <div className="contact-container">
-        <div className="left-container">
+    <Box component="div" className="section-contact" id="contact">
+      <Box component="div" className="contact-container">
+        <Box component="div" className="left-container">
           <form onSubmit={handleSubmit} ref={form}>
             <h1>Contact me:</h1>
             <input type="text" placeholder="Your name" name="name" required />
@@ -57,7 +58,7 @@ export default function Contact() {
             </span>
             <span>{error ? "Something went wrong :(" : ""} </span>
           </form>
-          <div className="contact">
+          <Box component="div" className="contact">
             <span>
               <img src={mailIco} /> Or text me at:
             </span>
@@ -66,15 +67,15 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              przemyslaw.przebieda@gmail.com
+              io4.shekhar@gmail.com
             </a>
-          </div>
-        </div>
+          </Box>
+        </Box>
 
         <div className="right-container">
           <Map />
         </div>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

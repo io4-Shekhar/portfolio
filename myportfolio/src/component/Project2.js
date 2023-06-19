@@ -5,6 +5,7 @@ import reactIco from "../Assets/img/react.png";
 import gitIco from "../Assets/img/githubIco.png";
 import liveIco from "../Assets/img/live.png";
 import firebaseIco from "../Assets/img/firebase.png";
+import { Box } from "@mui/material";
 
 export default function Project2() {
   const [html, setHtml] = useState("");
@@ -42,19 +43,14 @@ export default function Project2() {
     setFirebase();
   };
   return (
-    <div className="project-box">
-      <div className="right-container">
-        <h1>Pizza Event</h1>
-        <div className="description">
-          "Pizza Event" is an application used to sign up for an event for pizza
-          lovers. The user can create an account and log in to it.
-          Authentication is performed by Firebase. Subsequently, the
-          authenticated user has the option to sign up for the event through the
-          submission form. User data is stored in local storage. A list of
-          enrolled users is also available in the application. The application
-          is written for mobile and desktop users.
-          <div className="tech-box">
-            <div
+    <Box component="div" className="project-box">
+      <Box component="div" className="right-container">
+        <h1>Nike Showroom</h1>
+        <Box component="div" className="description">
+          "Nike Showroom" for online Shopping
+          <Box component="div" className="tech-box">
+            <Box
+              component="div"
               className="single-box"
               id="React"
               onMouseEnter={handleMouseEnter}
@@ -62,8 +58,9 @@ export default function Project2() {
             >
               <img src={reactIco} className="tech-ico1" alt="html icon" />
               <span>{react ? "React" : ""}</span>
-            </div>
-            <div
+            </Box>
+            <Box
+              component="div"
               className="single-box"
               id="CSS"
               onMouseEnter={handleMouseEnter}
@@ -71,8 +68,9 @@ export default function Project2() {
             >
               <img src={cssIco} className="tech-ico2" alt="css icon" />
               <span>{css ? "CSS/SCSS" : ""}</span>
-            </div>
-            <div
+            </Box>
+            <Box
+              component="div"
               className="single-box"
               id="Firebase"
               onMouseEnter={handleMouseEnter}
@@ -84,14 +82,17 @@ export default function Project2() {
                 alt="firebase icon"
               />
               <span>{firebase ? "Firebase" : ""}</span>
-            </div>
-          </div>
-          <div className="links">
-            <a href="https://github.com/PPrzebieda/pizza-event" target="_blank">
+            </Box>
+          </Box>
+          <Box component="div" className="links">
+            <a
+              href="https://github.com/io4-Shekhar/io4-aspiration/tree/main/Monthly%20test/2023-03-01%20Nike"
+              target="_blank"
+            >
               <img src={gitIco} className="liveIco" alt="github icon" />
-              <span>GitHub</span>
+              <Box component="span">GitHub</Box>
             </a>
-            <a href="https://pprzebieda.github.io/pizza-event/" target="_blank">
+            <a href="#" target="_blank">
               <img
                 src={liveIco}
                 className="liveIco"
@@ -100,12 +101,12 @@ export default function Project2() {
               />
               <span>Live Demo</span>
             </a>
-          </div>
-        </div>
-      </div>
-      <div className="left-container">
+          </Box>
+        </Box>
+      </Box>
+      <Box component="div" className="left-container">
         <img src={page2} className="img-project2" />
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

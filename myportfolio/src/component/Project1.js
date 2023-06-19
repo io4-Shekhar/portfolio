@@ -42,15 +42,11 @@ export default function Project1() {
         <img src={page1} className="img-project1" />
       </div>
       <div className="right-container">
-        <h1>Exclusive Car Rental</h1>
+        <h1>Become a Seller</h1>
         <div className="description">
-          "Exclusive Car Rental" is a website where the user can rent a luxury
-          car. The user has the option to apply for a rental through an
-          application form. In addition, it is possible to preview available
-          cars with their technical data. The site contains information
-          necessary for car rental, the possibility to subscribe to the
-          newsletter and customer reviews. Website is written for mobile and
-          desktop users.
+          "Become a seller" This is a Page of Flipkart Which user can sell any
+          Product to Indian Customer, There are two Projects in This, One has
+          become a Seller and other Fee Structure, Using With HTML, CSS.
           <div className="tech-box">
             <div
               className="single-box"
@@ -73,16 +69,13 @@ export default function Project1() {
           </div>
           <div className="links">
             <a
-              href="https://github.com/PPrzebieda/exclusive-car-rental"
+              href="https://github.com/io4-Shekhar/io4-aspiration/tree/main/Monthly%20test/2023-02-28%20Test-1%20HTML-CSS%20flipkart%20seller%20page"
               target="blank"
             >
               <img src={gitIco} className="liveIco" alt="github icon" />
               <span>GitHub</span>
             </a>
-            <a
-              href="https://pprzebieda.github.io/exclusive-car-rental/"
-              target="_blank"
-            >
+            <a href="#" target="_blank">
               <img
                 src={liveIco}
                 className="liveIco"
