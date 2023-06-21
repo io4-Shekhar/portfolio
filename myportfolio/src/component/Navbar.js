@@ -1,7 +1,7 @@
 import React from "react";
 import menu from "../Assets/img/hamburger_menu.png";
 
-const name = `mui`;
+const name = `Portfolio`;
 
 export default function Navbar() {
   return (

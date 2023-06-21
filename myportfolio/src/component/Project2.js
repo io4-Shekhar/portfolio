@@ -6,6 +6,7 @@ import gitIco from "../Assets/img/githubIco.png";
 import liveIco from "../Assets/img/live.png";
 import firebaseIco from "../Assets/img/firebase.png";
 import { Box } from "@mui/material";
+import htmlIco from "../Assets/img/html.png";
 
 export default function Project2() {
   const [html, setHtml] = useState("");
@@ -52,12 +53,12 @@ export default function Project2() {
             <Box
               component="div"
               className="single-box"
-              id="React"
+              id="HTML"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <img src={reactIco} className="tech-ico1" alt="html icon" />
-              <span>{react ? "React" : ""}</span>
+              <img src={htmlIco} className="tech-ico1" alt="html icon" />
+              <span>{html ? "HTML" : ""}</span>
             </Box>
             <Box
               component="div"
@@ -69,7 +70,7 @@ export default function Project2() {
               <img src={cssIco} className="tech-ico2" alt="css icon" />
               <span>{css ? "CSS/SCSS" : ""}</span>
             </Box>
-            <Box
+            {/* <Box
               component="div"
               className="single-box"
               id="Firebase"
@@ -82,7 +83,7 @@ export default function Project2() {
                 alt="firebase icon"
               />
               <span>{firebase ? "Firebase" : ""}</span>
-            </Box>
+            </Box> */}
           </Box>
           <Box component="div" className="links">
             <a

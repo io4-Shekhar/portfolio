@@ -59,10 +59,9 @@ export default function Project3() {
           The project involves the creation of an application in which the user,
           after logging in, can create a resume by filling out a form. In
           addition, choosing its color scheme and page layout. The project
-          includes previewing the PDF document and downloading it. Projects
-          zakłada
-          <div className="tech-box">
-            <div
+          includes previewing the PDF document and downloading it.
+          {/* <div className="tech-box">
+             <div
               className="single-box"
               id="React"
               onMouseEnter={handleMouseEnter}
@@ -92,8 +91,8 @@ export default function Project3() {
                 alt="firebase icon"
               />
               <span>{firebase ? "Firebase" : ""}</span>
-            </div>
           </div>
+            </div> */}
           <div className="links">
             <a href="#projects">
               <img src={gitIco} className="liveIco" alt="github icon" />

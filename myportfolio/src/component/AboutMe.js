@@ -12,19 +12,13 @@ export default function AboutMe() {
           <div className="text">
             I am a beginner front-end developer and I am skilled in HTML, CSS
             and JavaScript web development, as well as the React framework. I am
-            a graduate of Code:Me Academy JavaScript - React module. I am
             looking to gain valuable experience in an IT environment and expand
             my competence. I am ready for challenges and eager to learn and
             acquire new skills.
             <br />
-            <br /> I graduated from the AGH University of Science and Technology
-            in Cracow with a degree in Mechanical Engineering with a
-            specialization in Computer Science in Mechanical Engineering.
+            <br /> I graduated from the Dr. Ram Manohar Lohiya Avadh University
+            in Ayodhya, Uttar Pradesh, with a Bsc in Mathmatics.
             <br />
-            <br />
-            Privately, in addition to developing web applications, I am
-            interested in beekeeping (I have my own apiary), kayaking and
-            off-roading.
             <img src={bee} />
           </div>
         </div>

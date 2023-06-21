@@ -16,7 +16,7 @@ const Map = () => {
   const markers = [
     {
       markerOffset: -25,
-      name: "Cracow, Poland",
+      name: "Delhi, India",
       coordinates: [19.9445, 50.0496],
     },
   ];

@@ -14,9 +14,9 @@ export default function MiniProjects() {
       <Box component="div" className="single-box">
         <img src={miniproj1} className="project-img" alt="project image" />
         <Box component="div" className="project-description">
-          React application with Bootstrap styles and Firebase authentication
+          Login Page using reactJs
           <a
-            href="https://github.com/PPrzebieda/firebase-authentication"
+            href="https://github.com/io4-Shekhar/reactgetapi/tree/main/src/pages"
             target="_blank"
           >
             <img src={gitIco} className="liveIco" alt="github icon" />
@@ -26,8 +26,11 @@ export default function MiniProjects() {
       <Box component="div" className="single-box">
         <img src={miniproj2} className="project-img" alt="project image" />
         <Box component="div" className="project-description">
-          Vanilla JS app that fetches and displays the current time and weather
-          <a href="https://github.com/PPrzebieda/dashboard" target="_blank">
+          Get Api Axios get method to call the api
+          <a
+            href="https://github.com/io4-Shekhar/reactgetapi/tree/main/src/component"
+            target="_blank"
+          >
             <img src={gitIco} className="liveIco" alt="github icon" />
           </a>
         </Box>
@@ -35,9 +38,9 @@ export default function MiniProjects() {
       <Box component="div" className="single-box">
         <img src={miniproj3} className="project-img" alt="project image" />
         <Box component="div" className="project-description">
-          React application with login, registration and dashboard component.
+          Get api call using React with materialUI
           <a
-            href="https://github.com/PPrzebieda/react-login-app"
+            href="https://github.com/io4-Shekhar/reactwithmatrialui/blob/main/src/component/GetApiComponent.js"
             target="_blank"
           >
             <img src={gitIco} className="liveIco" alt="github icon" />
@@ -47,10 +50,9 @@ export default function MiniProjects() {
       <Box component="div" className="single-box">
         <img src={miniproj4} className="project-img" alt="project image" />
         <Box component="div" className="project-description">
-          Online store outline using HTML and CSS with no JavaScript. Contain
-          dropdown menu, tables, forms and other HTML elements.
+          Make a Simple Form to Create Account
           <a
-            href="https://github.com/PPrzebieda/html-css-online-shop"
+            href="https://github.com/io4-Shekhar/io4-aspiration/blob/main/assignment/2023-01-23%20header%2C%20form%2C%20footel/form.html"
             target="_blank"
           >
             <img src={gitIco} className="liveIco" alt="github icon" />
@@ -60,9 +62,9 @@ export default function MiniProjects() {
       <Box component="div" className="single-box">
         <img src={miniproj5} className="project-img" alt="project image" />
         <Box component="div" className="project-description">
-          A simple counter for learning Redux
+          Created a youtube page to Play a Video.
           <a
-            href="https://github.com/PPrzebieda/redux-counter/tree/main/count"
+            href="https://github.com/io4-Shekhar/io4-aspiration/tree/main/assignment/2023-02-16%20youtube%20page"
             target="_blank"
           >
             <img src={gitIco} className="liveIco" alt="github icon" />

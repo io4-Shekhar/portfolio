@@ -60,7 +60,7 @@ export default function Contact() {
           </form>
           <Box component="div" className="contact">
             <span>
-              <img src={mailIco} /> Or text me at:
+              <img src={mailIco} /> Or email me at:
             </span>
             <a
               href="mailto:przemyslaw.przebieda@gmal.com"
