@@ -5,7 +5,7 @@ import cssIco from "../Assets/img/css.png";
 import jsIco from "../Assets/img/js.png";
 import bootIco from "../Assets/img/bootstrap.png";
 import reactIco from "../Assets/img/react.png";
-import threeIco from "../Assets/img/three.png";
+//import threeIco from "../Assets/img/three.png";
 import gitIco from "../Assets/img/githubIco.png";
 import liveIco from "../Assets/img/live.png";
 import firebaseIco from "../Assets/img/firebase.png";
@@ -60,39 +60,6 @@ export default function Project3() {
           after logging in, can create a resume by filling out a form. In
           addition, choosing its color scheme and page layout. The project
           includes previewing the PDF document and downloading it.
-          {/* <div className="tech-box">
-             <div
-              className="single-box"
-              id="React"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <img src={reactIco} className="tech-ico1" alt="html icon" />
-              <span>{react ? "React" : ""}</span>
-            </div>
-            <div
-              className="single-box"
-              id="CSS"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <img src={cssIco} className="tech-ico2" alt="html icon" />
-              <span>{css ? "CSS/SCSS" : ""}</span>
-            </div>
-            <div
-              className="single-box"
-              id="Firebase"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <img
-                src={firebaseIco}
-                className="tech-ico1"
-                alt="firebase icon"
-              />
-              <span>{firebase ? "Firebase" : ""}</span>
-          </div>
-            </div> */}
           <div className="links">
             <a href="#projects">
               <img src={gitIco} className="liveIco" alt="github icon" />
