@@ -2,7 +2,7 @@
   height: 100vh;
 }
 .section-main .main-page-container {
-  width: 90%;
+  width: 98%;
   margin-left: 10%;
   margin-top: 150px;
   display: flex;
@@ -181,6 +181,7 @@
   align-items: center;
   position: relative;
   width: 45%;
+  margin-left: -30px;
 }
 @media only screen and (max-width: 1300px) {
   .section-main .right-container {
@@ -191,6 +192,6 @@
   width: 20em;
   height: 20em;
   border-radius: 50%;
-  border: 1px solid #28363d;
+  border: 0px solid #28363d;
   position: absolute;
 } /*# sourceMappingURL=hero.css.map */
